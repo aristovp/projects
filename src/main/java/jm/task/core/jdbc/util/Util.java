@@ -11,7 +11,7 @@ public class Util {
 
     private  static final String USERNAME = "root";
     private  static final String PASSWORD = "12019050";
-    private  static final String URL = "jdbc:mysql://localhost:3306/mysql?useSSL=false";
+    private  static final String URL = "jdbc:mysql://localhost:3306/mysql?allowPublicKeyRetrieval=true&useSSL=false";
 
     private static Connection connection;
 

@@ -72,16 +72,14 @@ public class User {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof User)) return false;
-        User user = (User) o;
-        return Objects.equals(getId(), user.getId())
-                && Objects.equals(getName(), user.getName())
+        if (!(o instanceof User user)) return false;
+        return Objects.equals(getName(), user.getName())
                 && Objects.equals(getLastName(), user.getLastName())
                 && Objects.equals(getAge(), user.getAge());
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getId(), getName(), getLastName(), getAge());
+        return Objects.hash(getName(), getLastName(), getAge());
     }
 }
